@@ -1,0 +1,397 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 1rem; */
+
+  color-scheme: light dark;
+
+  background-color: #e2d9c8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  color: #f1f0ee;
+}
+
+/* NAVBAR START */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  position: fixed;
+  background-color: rgba(48, 38, 28, 1);
+  top: 0;
+  right: 0;
+  left: 0;  
+  z-index: 99999;
+}
+
+.navbar .navbar-logo{
+  color: #f1f0ee;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: #dac297;
+}
+
+.navbar .navbar-nav a{
+  color: #f1f0ee;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+  color: #dac297;
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid #f1f0ee;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a{
+  color: #f1f0ee;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover{
+  color: #dac297;
+}
+
+#hamburger-menu{
+  display: none;
+}
+
+/* Hero */
+.hero{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(./assets/background/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%; 
+  height: 30%;
+  bottom: 0;
+  /* background: linear-gradient(0deg,rgba(227, 217, 199,1) 3%, rgba(255,255,255,0) 25%); */
+}
+
+.hero .content{
+  color: #f1f0ee;
+  padding: 1.4rem 13%;
+  max-width: 60rem;
+}
+
+.hero .content h3{
+  color: #f1f0ee;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 3,0,5);
+}
+
+.hero .content h1{
+  margin-top: 0.3rem;
+  color: #f1f0ee;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 3,0.5);
+  line-height: 3rem;  
+  /* mix-blend-mode: difference; */
+
+}
+
+.hero .content .cta{
+  display: inline-block;
+  margin-top: 1rem;
+  color: #30261c;
+  background-color: #f1f0ee;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+}
+
+
+/* Services */
+.our-services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 7%;
+}
+
+.our-services img{
+  width: 4rem;
+  margin: 0 5rem;
+}
+
+.our-services p {
+  color: #30261c;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* Menu */
+.special-menu {
+  padding: 3rem 7%;
+  background-color: #f1f0ee;
+  color: #30261c;
+}
+
+.special-menu h1, .customers h1 {
+  color: #30261c;
+  text-align: center;
+}
+
+.special-menu .row{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.special-menu .row .card-menu {
+  margin: 0 1.4rem;
+  position: relative;
+}
+
+.special-menu .row .card-menu img{
+  width: 15rem;
+  border-radius: 0.6rem;
+}
+
+.special-menu .row .card-menu .favorite{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.special-menu .row .card-menu h4{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.special-menu .row .card-menu p {
+  font-size: .9rem;
+ font-weight: 300;
+}
+
+.special-menu .row .card-menu button {
+  background: none;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+.special-menu .row .card-menu .extra-card{
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.special-menu .special-dessert{
+  margin-top: 4rem;
+}
+
+/* Expolre-Product */
+.explore-product {
+  background-image: url('./assets/explore-product.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+}
+
+.explore-product .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.explore-product h1 { 
+  text-shadow: 1px 1px 3px rgba(0, 0, 3,0.8);
+  font-size: 2rem;
+}
+
+.explore-product a { 
+
+  color: #f1f0ee;
+  background-color: #30261c;
+  padding: 1rem 3rem;
+  border-radius: 0.6rem;
+}
+
+/* Customers */
+.customers {
+text-align: center;
+margin: 2rem 7%;
+color: #30261c;
+}
+
+.customers .customers-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.customers .customers-card .card{
+  border-radius: 0.8rem;
+  padding: 2rem 2rem;
+  margin: 1rem 0.6rem;
+  box-shadow: 1px 1px 3px;
+}
+
+.customers .customers-card .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.customers  .customers-card .left{
+  display: flex;
+}
+
+
+.customers .customers-card .row img{
+  width: 3rem;
+  height: 3rem;
+}
+
+
+
+
+.customers .customers-card .card p{
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.customers .customers-card .card .left .name-title{
+  display: block;
+  margin: auto 1rem;
+}
+
+
+.customers .customers-card .card .left .name-title h1{
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.customers .customers-card .card .left .name-title h3{
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/* Media Queries */
+
+
+/* Laptop */
+@media (max-width: 1366px){
+  html{
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px){
+  html{
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu{
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #f1f0ee;
+    width: 25rem;
+    height: 100vh;
+    transition: 0.7s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a{
+    color: #000000;
+    display: block;
+    margin: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after{
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.2);
+  }
+
+  .our-services {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .special-menu .row{
+    flex-wrap: wrap;
+  }
+
+  .special-menu .row .card-menu{
+    margin-top: 2rem;
+  }
+
+  .customers .customers-card {
+    flex-wrap: wrap;
+    margin: 0 8%;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px){
+  html{
+    font-size: 55%;
+  }
+}
+
+
+
