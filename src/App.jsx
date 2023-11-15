@@ -1,5 +1,6 @@
 import Customers from "./components/Customers/Customers";
 import ExploreProduct from "./components/ExploreProduct/ExploreProduct";
+import Footer from "./components/Footers/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/navbar";
 import Services from "./components/Services/Services";
@@ -14,6 +15,7 @@ function App() {
       <SpecialProduct />
       <ExploreProduct />
       <Customers />
+      <Footer />
     </>
   );
 }

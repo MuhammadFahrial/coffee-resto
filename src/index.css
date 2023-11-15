@@ -318,6 +318,41 @@ color: #30261c;
   font-weight: 300;
 }
 
+/* Footer */
+.footer {
+  background-color: #30261c;
+  color: #e2d9c8;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 7%;
+}
+
+.footer h1{
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.footer h3{
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.footer a { 
+  display: flex;
+  flex-direction: column;
+  color: #f1f0ee;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+  color: #7d7d7d;
+}
+
+.footer .social-media .social-menu a {
+  display: inline-block; 
+  margin: 0 0.4rem;
+}
+
+
+
 /* Media Queries */
 
 
