@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Search, ShoppingCart, Menu } from "react-feather";
 import Cart from "../Cart/Cart";
 

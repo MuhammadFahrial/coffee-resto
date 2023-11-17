@@ -1,10 +1,9 @@
-import React from "react";
 import hotCoffee from "../../assets/Services/hot-coffee.png";
 import iceCoffee from "../../assets/Services/iced-coffee.png";
 import cupCoffee from "../../assets/Services/coffee-cup.png";
 import dessert from "../../assets/Services/cake.png";
 
-const Services = () => {
+const OurServices = () => {
   return (
     <>
       <section className="our-services">
@@ -24,10 +23,9 @@ const Services = () => {
           <img src={dessert} alt="dessert" />
           <p>Dessert</p>
         </div>
-        
       </section>
     </>
   );
 };
 
-export default Services;
+export default OurServices;

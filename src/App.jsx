@@ -3,7 +3,7 @@ import ExploreProduct from "./components/ExploreProduct/ExploreProduct";
 import Footer from "./components/Footers/Footer";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/navbar";
-import Services from "./components/Services/Services";
+import OurServices from "./components/Services/Services";
 import SpecialProduct from "./components/SpecialProduct/SpecialProduct";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Services />
+      <OurServices />
       <SpecialProduct />
       <ExploreProduct />
       <Customers />

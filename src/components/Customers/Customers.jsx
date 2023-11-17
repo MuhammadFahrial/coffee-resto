@@ -1,4 +1,3 @@
-import React from "react";
 import { Star } from "react-feather";
 import customers1 from "../../assets/Customers/man.png";
 import customers2 from "../../assets/Customers/man1.png";
