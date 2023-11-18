@@ -10,9 +10,6 @@ const SpecialProduct = () => {
           <h1>Our Special Coffee</h1>
           <div className="row">
             <ItemSpecialProductCoffee />
-            <ItemSpecialProductCoffee />
-            <ItemSpecialProductCoffee />
-            <ItemSpecialProductCoffee />
           </div>
         </div>
         {/* Special Coffee End */}
@@ -21,9 +18,6 @@ const SpecialProduct = () => {
         <div className="special-dessert">
           <h1>Our Special Dessert</h1>
           <div className="row">
-            <ItemSpecialProductDesert />
-            <ItemSpecialProductDesert />
-            <ItemSpecialProductDesert />
             <ItemSpecialProductDesert />
           </div>
         </div>
