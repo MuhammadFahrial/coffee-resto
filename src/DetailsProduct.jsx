@@ -1,33 +1,39 @@
-import creamLatte from "./assets/Product/SpecialCoffee/1.jpg";
-import croissant from "./assets/Product/SpecialDessert/1.jpg";
+import americano from "./assets/Product/SpecialCoffee/americano.jpg";
+import cappuccino from "./assets/Product/SpecialCoffee/cappuccino.jpg";
+import latte from "./assets/Product/SpecialCoffee/latte.jpg";
+import raf from "./assets/Product/SpecialCoffee/raf.jpg";
+import tokyoRamen from "./assets/Product/SpecialDessert/1.jpg";
+import fukuokaRamen from "./assets/Product/SpecialDessert/2.jpg";
+import nagoyaRamen from "./assets/Product/SpecialDessert/3.jpg";
+import kyotoRamen from "./assets/Product/SpecialDessert/4.jpg";
 
 // Special Coffee
 export const productSpecialCoffee = [
   {
     id: 0,
-    img: creamLatte,
-    name: "Cream Latte",
+    img: americano,
+    name: "Americano",
     description: "Lorem ipsum dolor sit amet.",
     price: 15000,
   },
   {
     id: 1,
-    img: creamLatte,
-    name: "Cream Latte",
+    img: cappuccino,
+    name: "Cappuccino",
     description: "Lorem ipsum dolor sit amet.",
     price: 15000,
   },
   {
     id: 2,
-    img: creamLatte,
-    name: "Cream Latte",
+    img: latte,
+    name: "Latte",
     description: "Lorem ipsum dolor sit amet.",
     price: 15000,
   },
   {
     id: 3,
-    img: creamLatte,
-    name: "Cream Latte",
+    img: raf,
+    name: "Raf",
     description: "Lorem ipsum dolor sit amet.",
     price: 15000,
   },
@@ -37,29 +43,29 @@ export const productSpecialCoffee = [
 export const productSpecialDesert = [
   {
     id: 0,
-    img: croissant,
-    name: "Croissant",
+    img: tokyoRamen,
+    name: "Tokyo Ramen",
     description: "Lorem ipsum dolor sit amet.",
     price: 5000,
   },
   {
     id: 1,
-    img: croissant,
-    name: "Croissant",
+    img: nagoyaRamen,
+    name: "Nagoya Ramen",
     description: "Lorem ipsum dolor sit amet.",
     price: 5000,
   },
   {
     id: 2,
-    img: croissant,
-    name: "Croissant",
+    img: fukuokaRamen,
+    name: "Fukuoka Ramen",
     description: "Lorem ipsum dolor sit amet.",
     price: 5000,
   },
   {
     id: 3,
-    img: croissant,
-    name: "Croissant",
+    img: kyotoRamen,
+    name: "Kyoto Ramen",
     description: "Lorem ipsum dolor sit amet.",
     price: 5000,
   },

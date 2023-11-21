@@ -172,8 +172,9 @@ body {
 }
 
 .shopping-cart .cart-item img{
-  width: 4rem;
-  border-radius: 0.6rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10rem;
 }
 
 .shopping-cart .cart-item .item-category{ 
@@ -339,7 +340,7 @@ body {
 
 .special-menu .row .card-menu img{
   width: 15rem;
-  border-radius: 0.6rem;
+  border-radius: 10rem;
 }
 
 .special-menu .row .card-menu .favorite{

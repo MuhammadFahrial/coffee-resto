@@ -16,7 +16,7 @@ const SpecialProduct = () => {
 
         {/* Special Dessert Start */}
         <div className="special-dessert">
-          <h1>Our Special Dessert</h1>
+          <h1>Our Special Noodles</h1>
           <div className="row">
             <ItemSpecialProductDesert />
           </div>
