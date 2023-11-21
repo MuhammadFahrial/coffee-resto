@@ -7,10 +7,6 @@ const Cart = () => {
       <h1>Cart</h1>
       <div className="cart-product">
         <ProductCart />
-        <ProductCart />
-        <ProductCart />
-        <ProductCart />
-        <ProductCart />
       </div>
 
       <div className="checkout-form">
