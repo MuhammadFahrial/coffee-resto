@@ -19,9 +19,6 @@ const ItemSpecialProductCoffee = () => {
         productSpecialCoffee.map((product) => (
           <div className="card-menu" key={product.id}>
             <img src={product.img} alt="cream-latte" />
-            <button className="favorite">
-              <Heart color="white" size={18} />
-            </button>
             <h4>{product.name}</h4>
             <p>{product.description}</p>
             <div className="extra-card">
@@ -32,9 +29,15 @@ const ItemSpecialProductCoffee = () => {
                   minimumFractionDigits: 0,
                 }).format(product.price)}
               </h3>
-              <button onClick={() => addItem(product)}>
-                <ShoppingCart color="#30261c" size={20} />
-              </button>
+              <div className="button-card">
+                <button className="favorite">
+                  <Heart size={18} />
+                </button>
+
+                <button onClick={() => addItem(product)}>
+                  <ShoppingCart size={20} />
+                </button>
+              </div>
             </div>
           </div>
         ))

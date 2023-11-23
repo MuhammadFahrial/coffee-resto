@@ -343,11 +343,11 @@ body {
   border-radius: 10rem;
 }
 
-.special-menu .row .card-menu .favorite{
+/* .special-menu .row .card-menu .favorite{
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-}
+} */
 
 .special-menu .row .card-menu h4{
   font-size: 1.2rem;
@@ -371,6 +371,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.special-menu .row .card-menu .extra-card .button-card button{
+ margin: 0 0.4rem;
 }
 
 .special-menu .special-dessert{

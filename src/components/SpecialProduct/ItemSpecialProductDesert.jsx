@@ -9,9 +9,6 @@ const ItemSpecialProductDesert = () => {
         productSpecialDesert.map(({ id, img, name, description, price }) => (
           <div className="card-menu" key={id}>
             <img src={img} alt="cream-latte" />
-            <button className="favorite">
-              <Heart color="white" size={18} />
-            </button>
             <h4>{name}</h4>
             <p>{description}</p>
             <div className="extra-card">
@@ -22,9 +19,14 @@ const ItemSpecialProductDesert = () => {
                   minimumFractionDigits: 0,
                 }).format(price)}
               </h3>
-              <button>
-                <ShoppingCart color="#30261c" size={20} />
-              </button>
+              <div className="button-card">
+                <button className="favorite">
+                  <Heart size={18} />
+                </button>
+                <button>
+                  <ShoppingCart size={20} />
+                </button>
+              </div>
             </div>
           </div>
         ))

@@ -20,11 +20,11 @@ const Customers = () => {
                 </div>
               </div>
               <div className="ratings">
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
               </div>
             </div>
             <p>
@@ -39,16 +39,16 @@ const Customers = () => {
               <div className="left">
                 <img src={customers2} alt="customers2" />
                 <div className="name-title">
-                  <h1>Sam Williams</h1>
+                  <h1>Williams</h1>
                   <h3>Enterpreneur</h3>
                 </div>
               </div>
               <div className="ratings">
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
               </div>
             </div>
             <p>
@@ -63,16 +63,16 @@ const Customers = () => {
               <div className="left">
                 <img src={customers3} alt="customers3" />
                 <div className="name-title">
-                  <h1>Angela Gonzales</h1>
+                  <h1>Angela</h1>
                   <h3>Manager</h3>
                 </div>
               </div>
               <div className="ratings">
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
-                <Star color="yellow" size={17} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
+                <Star color="yellow" size={15} />
               </div>
             </div>
             <p>
