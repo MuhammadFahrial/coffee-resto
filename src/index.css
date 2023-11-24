@@ -565,14 +565,15 @@ color: #30261c;
   }
 
   .special-menu .row{
-    /* flex-wrap: wrap; */
-    overflow-x: scroll;
-    justify-content: space-between;
+margin-top: 0;
+    flex-wrap: wrap;
+    /* overflow-x: scroll; */
+    /* justify-content: space-between; */
     width: 100%;
   }
 
   .special-menu .row::-webkit-scrollbar{
-    display: none;
+    /* display: none; */
   }
 
   .special-menu .row .card-menu{
@@ -587,6 +588,17 @@ color: #30261c;
   .navbar .search-form {
     width: 90%;
   }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer .social-media{
+    width: 100vw;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
 }
 
 /* Mobile Phone */
