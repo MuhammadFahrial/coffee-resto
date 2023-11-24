@@ -6,9 +6,11 @@ import {
   removeItems,
 } from "../../features/cart/cartSlice";
 
+
 const ProductCart = () => {
   const dispacth = useDispatch();
   const cartProduct = useSelector((state) => state.cart.cartItems);
+
 
   const handleToIncrement = (item) => {
     dispacth(increment(item));
@@ -44,7 +46,13 @@ const ProductCart = () => {
                 <Plus size={14} />
               </button>
             </div>
-            <p className="item-price">{product.total}</p>
+            <p className="item-price">
+              {new Intl.NumberFormat("id-ID", {
+                style: "currency",
+                currency: "IDR",
+                minimumFractionDigits: 0,
+              }).format(product.total)}
+            </p>
             <button
               className="delete"
               onClick={() => handleToRemoveItems(product)}
@@ -54,6 +62,8 @@ const ProductCart = () => {
           </div>
         );
       })}
+
+    
     </>
   );
 };
