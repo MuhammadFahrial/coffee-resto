@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { ShoppingCart, Heart } from "react-feather";
 import { productSpecialCoffee } from "../../DetailsProduct";
+import { useDispatch } from "react-redux";
+import { addItems } from "../../features/cart/cartSlice";
 
 const ItemSpecialProductCoffee = () => {
-  const [cart, setCartItem] = useState([]);
+  const dispatch = useDispatch();
 
-  const addItem = (items) => {
-    const updateCart = [...cart, items];
-    setCartItem(updateCart);
-    // console.log(updateCart);
+  const handleToAdd = (item) => {
+    dispatch(addItems(item));
   };
-
-  console.log(cart);
 
   return (
     <>
@@ -34,7 +32,7 @@ const ItemSpecialProductCoffee = () => {
                   <Heart size={18} />
                 </button>
 
-                <button onClick={() => addItem(product)}>
+                <button onClick={() => handleToAdd(product)}>
                   <ShoppingCart size={20} />
                 </button>
               </div>

@@ -42,28 +42,28 @@ export const productSpecialCoffee = [
 // Special Dessert
 export const productSpecialDesert = [
   {
-    id: 0,
+    id: 4,
     img: tokyoRamen,
     name: "Tokyo Ramen",
     description: "Lorem ipsum dolor sit amet.",
     price: 5000,
   },
   {
-    id: 1,
+    id: 5,
     img: nagoyaRamen,
     name: "Nagoya Ramen",
     description: "Lorem ipsum dolor sit amet.",
     price: 5000,
   },
   {
-    id: 2,
+    id: 6,
     img: fukuokaRamen,
     name: "Fukuoka Ramen",
     description: "Lorem ipsum dolor sit amet.",
     price: 5000,
   },
   {
-    id: 3,
+    id: 7,
     img: kyotoRamen,
     name: "Kyoto Ramen",
     description: "Lorem ipsum dolor sit amet.",
