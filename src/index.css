@@ -136,6 +136,28 @@ body {
   transition: 0.5s;
 }
 
+.navbar #shopping-cart{
+  position: relative;
+}
+
+.navbar #shopping-cart .totalQuantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: -20%;
+  font-size: 0.6rem;
+  background-color: red;
+  border-radius: 20rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+ .none{
+  display: none;
+}
+
 .shopping-cart.active{
   right:0;
 }
@@ -244,6 +266,10 @@ body {
   border: none;
   color: #f1f0ee;
   cursor: pointer;
+}
+
+.empty{
+  text-align: center;
 }
 
 /* Hero */

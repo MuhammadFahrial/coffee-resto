@@ -66,6 +66,12 @@ export const cartTotalSelector = (state) => {
   }, 0); // 0 adalah nilai awal total
 };
 
+export const cartQuantitySelector = (state) => {
+  return state.cart.cartItems.reduce((quantity, item) => {
+    return quantity + item.quantity;
+  }, 0);
+};
+
 export const { addItems, increment, decrement, removeItems } =
   cartSlice.actions;
 export default cartSlice.reducer;

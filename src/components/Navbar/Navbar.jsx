@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { Search, ShoppingCart, Menu } from "react-feather";
 import Cart from "../Cart/Cart";
+import { useSelector } from "react-redux";
+import { cartQuantitySelector } from "../../features/cart/cartSlice";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
   const [cart, setCart] = useState(false);
+
+  const totalQuantity = useSelector(cartQuantitySelector);
 
   const handleClickToggle = () => {
     setToggle(!toggle);
@@ -70,6 +74,9 @@ const Navbar = () => {
           </a>
           <a id="shopping-cart" onClick={() => handleClickCart()}>
             <ShoppingCart />
+            <p className={totalQuantity < 1 ? "none" : "totalQuantity"}>
+              {totalQuantity}
+            </p>
           </a>
           <a id="hamburger-menu" onClick={() => handleClickToggle()}>
             <Menu />

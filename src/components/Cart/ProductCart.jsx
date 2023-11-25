@@ -6,11 +6,9 @@ import {
   removeItems,
 } from "../../features/cart/cartSlice";
 
-
 const ProductCart = () => {
   const dispacth = useDispatch();
   const cartProduct = useSelector((state) => state.cart.cartItems);
-
 
   const handleToIncrement = (item) => {
     dispacth(increment(item));
@@ -62,8 +60,6 @@ const ProductCart = () => {
           </div>
         );
       })}
-
-    
     </>
   );
 };
