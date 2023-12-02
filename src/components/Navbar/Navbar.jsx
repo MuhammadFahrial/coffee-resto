@@ -73,7 +73,7 @@ const Navbar = () => {
           COFFEE <span>RESTO.</span>
         </a>
 
-        <div className={toggle ? "navbar-nav active" : "navbar-nav"}>
+        <div className={`navbar-nav ${toggle ? "active" : ""}`}>
           <a href="#">Home</a>
           <a href="#">Coffee</a>
           <a href="#">Bakery</a>
