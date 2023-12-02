@@ -33,11 +33,14 @@ body {
   align-items: center;
   padding: 1rem 7%;
   position: fixed;
-  background-color: rgba(48, 38, 28, 1);
   top: 0;
   right: 0;
   left: 0;  
   z-index: 99999;
+}
+
+.scroll{
+   background-color: rgba(48, 38, 28, 1);
 }
 
 .navbar .navbar-logo{
@@ -289,15 +292,17 @@ body {
   display: block;
   position: absolute;
   width: 100%; 
-  height: 30%;
+  height: 100%;
   bottom: 0;
-  /* background: linear-gradient(0deg,rgba(227, 217, 199,1) 3%, rgba(255,255,255,0) 25%); */
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hero .content{
   color: #f1f0ee;
   padding: 1.4rem 13%;
   max-width: 60rem;
+  position: absolute;
+  z-index: 9999;
 }
 
 .hero .content h3{
@@ -613,6 +618,11 @@ margin-top: 0;
 
   .navbar .search-form {
     width: 90%;
+  }
+
+  .our-services img{
+    width: 3rem;
+    margin: 0 3rem;
   }
 
   .footer {

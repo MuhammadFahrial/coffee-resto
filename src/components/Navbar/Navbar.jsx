@@ -1,15 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Search, ShoppingCart, Menu } from "react-feather";
 import Cart from "../Cart/Cart";
 import { useSelector } from "react-redux";
 import { cartQuantitySelector } from "../../features/cart/cartSlice";
 
 const Navbar = () => {
+  const [changeColor, setChangeColor] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
   const [cart, setCart] = useState(false);
 
   const totalQuantity = useSelector(cartQuantitySelector);
+
+  useEffect(() => {
+    const changeBackgroundColor = () => {
+      if (window.scrollY > 10) {
+        setChangeColor(true);
+      } else {
+        setChangeColor(false);
+      }
+    };
+
+    window.addEventListener("scroll", changeBackgroundColor);
+  });
 
   const handleClickToggle = () => {
     setToggle(!toggle);
@@ -55,7 +68,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar ${changeColor ? "scroll" : ""}`}>
         <a href="" className="navbar-logo">
           COFFEE <span>RESTO.</span>
         </a>
