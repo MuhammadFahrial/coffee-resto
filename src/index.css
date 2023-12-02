@@ -596,10 +596,10 @@ color: #30261c;
   }
 
   .special-menu .row{
-margin-top: 0;
-    flex-wrap: wrap;
-    /* overflow-x: scroll; */
-    /* justify-content: space-between; */
+    margin-top: 0;
+    /* flex-wrap: wrap; */
+    overflow-x: scroll;
+    justify-content: space-between;
     width: 100%;
   }
 
