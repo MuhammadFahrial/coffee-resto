@@ -31,8 +31,16 @@ const ProductCart = () => {
             <div className="item-detail">
               <h2 className="item-name">{product.name}</h2>
               <div className="item-category">
-                <p className="item-type">Hot</p>
-                <p className="item-size">Large</p>
+                <select className="item-type">
+                  <option value="hot">Hot</option>
+                  <option value="ice">Ice</option>
+                </select>
+                <select className="item-size">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                  <option value="extra-large">Extra Large</option>
+                </select>
               </div>
             </div>
             <div className="item-quantity">

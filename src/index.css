@@ -212,11 +212,11 @@ body {
   margin: 0.4rem 0;
 }
 
-.shopping-cart .cart-item .item-category p{
+.shopping-cart .cart-item .item-category select{
   font-size: 0.9rem; 
   box-shadow: 0 0 1px;
   margin-right: 0.6rem;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 0.2rem;
   border-radius: 0.2rem;
 }
 
